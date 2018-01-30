@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JVM 1.7"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/m4_client.jar"/>
+	<classpathentry kind="lib" path="lib/m4_common.jar"/>
+	<classpathentry kind="lib" path="lib/m4_server.jar"/>
+	<classpathentry kind="lib" path="lib/m4_util.jar"/>
+	<classpathentry kind="lib" path="lib/poi-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="lib/poi-examples-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="lib/poi-excelant-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-schemas-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="lib/poi-scratchpad-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.6.2.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.6.2.jar"/>
+	<classpathentry kind="lib" path="lib/dqdic.jar"/>
+	<classpathentry kind="lib" path="lib/ejiana.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/xbean_xpath.jar"/>
+	<classpathentry kind="lib" path="lib/xbean.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
