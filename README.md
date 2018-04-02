@@ -18,3 +18,8 @@ SCOPUS 계량 통계 분석 추출을 위해 사용된 쿼리 정보를 공유�
     11. ExecutorIBSSearch 클래스를 열고 F11 또는 Run Counfigures를 통해 해당 애플리케이션 선택후 Run버튼 클릭 
     
 **그이후 해당 클래스 실행시 Program Arguments 항목만 수정해서 중복 실행 가능합니다.**
+
+# G-PASS EXPORT
+##### 파일목록
+	1. G-PASS_EXPORT_SEARCH.zip : 특허검색식을 활용하여 데이터 Export 모듈이 포함된 프로젝트
+	2. 특허 검색식을 활용하여 데이터 Export.txt : Export 모듈 실행 방법 설명
