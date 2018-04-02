@@ -1,0 +1,7 @@
+ 한줄로 데이터 출력 - 다중 값 항목도 한줄로 처리합니다.
+-tgD:/Project_Document/2017/KISTI/특허데이터지원/US_PATENT_PUB_2017_07_11/ -ru"(US).au. and (1976-2016).py. and (G).publ_type." -cn500 -ftTEXT -bwY -keD:/release/keyword_extract -efpno,ref_count
+
+데이터 출력 - 다중 항목은 여려줄로 출력합니다. reference, citation, Ipc 등
+출력 필드는 코드를  확인해주세요.
+-mv값이 Y일떄 일부 항목에 대해서 여러줄로 출력합니다.
+-tgD:/Project_Docment/2017/KISTI/특허데이터지원/US_PATENT_PUB_2017_07_11/ -ru"(US).au. and (1976-2016).py. and (G).publ_type." -cn500 -ftTEXT -bwY -keD:/release/keyword_extract -efpno,references -mvY

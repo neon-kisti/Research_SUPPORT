@@ -1,4 +1,20 @@
-﻿-- 1% 저널 연도별 국가 통계 수집 쿼리
+-- coreawin 연도별국가수 Query 
+select publication_year, country_code, count(eid) from (
+SELECT DISTINCT A.EID, A.PUBLICATION_YEAR, A.COUNTRY_CODE
+FROM (
+  SELECT distinct EID, PUBLICATION_YEAR, COUNTRY_CODE
+  FROM NEON_2018_DOCUMENT_CN 
+  WHERE EID IN (
+      SELECT DISTINCT EID FROM NEON_2018_JOURNAL_TOP_1_DOC
+  ) and
+  country_code in ('USA', 'CHN', 'GBR', 'DEU', 'FRA', 'CAN', 'JPN', 'ITA', 'ESP', 'AUS', 'NLD', 'CHE', 'KOR', 'SWE', 'IND', 'BEL', 'TWN', 'DNK', 'BRA', 'AUT', 'SGP', 'ISR', 'HKG', 'FIN', 'NOR', 'POL', 'RUS', 'PRT', 'GRC', 'TUR')
+) A ) Q
+WHERE TO_NUMBER(PUBLICATION_YEAR) BETWEEN 2007 AND 2017
+group by cube(publication_year, country_code)
+order by publication_year, country_code;
+
+ 
+ -- 1% 저널 연도별 국가 통계 수집 쿼리
 DROP TABLE TMP_NJTD_1_COCT_ST CASCADE CONSTRAINTS PURGE;
 CREATE TABLE TMP_NJTD_1_COCT_ST AS
 SELECT DISTINCT A.EID, A.PUBLICATION_YEAR, A.COUNTRY_CODE
